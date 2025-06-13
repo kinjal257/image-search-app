@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+.search-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:10px; margin-top:20px; }
+.search-result { border:1px solid #ccc; padding:10px; }
+.search-result img { width:100%; height:auto; }
