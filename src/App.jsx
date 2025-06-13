@@ -41,16 +41,16 @@ function App() {
 
   const handle_submit = (e) => {
     e.preventDefault();
-    set_pg(1); // Reset page
-    set_results([]); // Clear previous results
-    set_search_trigger(prev => !prev); // Trigger useEffect
+    set_pg(1); 
+    set_results([]); 
+    set_search_trigger(prev => !prev); 
   };
 
   useEffect(() => {
     if (input_val.trim()) {
       run_search();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [search_trigger]);
 
   const handle_input = (e) => {
